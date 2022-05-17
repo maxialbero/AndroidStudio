@@ -12,15 +12,64 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/homeText"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="@string/home"
-            android:textAlignment="center"
-            android:textColor="#448AFF"
-            android:textSize="20sp"
-            app:autoSizeMinTextSize="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textColor="#2E7D32"
+                android:textSize="15sp"
+                app:drawableTopCompact="@mipmap/ic_launcher_round"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/armadio"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/btn"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/shop"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/homeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/social"
+                android:textAlignment="center"
+                android:textColor="#1976D2"
+                android:textSize="15sp"
+                app:autoSizeMinTextSize="20dp"
+                tools:text="Social" />
+
+        </LinearLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
