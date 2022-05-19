@@ -36,4 +36,4 @@ local.properties
 ehthumbs.db
 Thumbs.db
 
-MyCloset/app/build/*
+./MyCloset/app/build/*
