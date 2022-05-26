@@ -29,7 +29,7 @@ mipmap ic_launcher_round
 string app_name
 string armadio
 string btn
-string clicktoaddcontent
+string clickToAddContent
 string home
 string shop
 string social
