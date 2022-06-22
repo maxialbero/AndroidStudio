@@ -1,4 +1,4 @@
-package com.example.mycloset;
+/*package com.example.mycloset;
 
 import android.content.Context;
 import android.view.View;
@@ -42,3 +42,4 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         }
     }
 }
+ */

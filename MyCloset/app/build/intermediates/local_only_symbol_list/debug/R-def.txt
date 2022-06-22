@@ -19,8 +19,6 @@ drawable ic_launcher_foreground
 drawable ic_shop
 drawable ic_social
 drawable ic_wardrobe
-id Social
-id bottomNavigationBar
 id bottonAdd
 id button
 id chat1
@@ -29,13 +27,14 @@ id groupTxt
 id imageView
 id lastMsgTxt
 id message_toolbar
+id nav_bar
 id recView
 id recyclerView
 id textArmadio
 id textHome
 id textShop
+id textSocial
 id toolbar2
-id toolbar4
 layout activity_main
 layout bottom_nav_bar
 layout message_recieve

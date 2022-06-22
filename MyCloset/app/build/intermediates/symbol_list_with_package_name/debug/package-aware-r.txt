@@ -1761,7 +1761,6 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
-id Social
 id TOP_END
 id TOP_START
 id accelerate
@@ -1837,7 +1836,6 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
-id bottomNavigationBar
 id bottonAdd
 id bounce
 id button
@@ -2019,6 +2017,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_bar
 id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
@@ -2142,6 +2141,7 @@ id textArmadio
 id textEnd
 id textHome
 id textShop
+id textSocial
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2161,7 +2161,6 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar2
-id toolbar4
 id top
 id topPanel
 id touch_outside
