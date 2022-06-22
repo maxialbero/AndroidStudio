@@ -6,4 +6,10 @@
     <string name="btn">Btn</string>
     <string name="shop">Shop</string>
     <string name="clickToAddContent">clickToAddContent</string>
+    <string name="standard_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien risus, gravida quis nunc at, pellentesque mattis lacus. Morbi eget erat vitae enim viverra venenatis vitae eu quam.</string>
+    <string name="group_name">Group name</string>
+    <string name="last_message">Last message</string>
+    <string name="todo">TODO</string>
+    <string name="message_hint">Type your message</string>
+    <string name="button_send_text">Send</string>
 </resources>

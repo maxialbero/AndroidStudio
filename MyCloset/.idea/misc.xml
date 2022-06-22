@@ -4,10 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2375" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/bg_button.xml" value="0.2505" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/bg_input.xml" value="0.2505" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/bg_receive_message.xml" value="0.1935" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/bg_recieve_message.xml" value="0.2495" />
         <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2375" />
         <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2375" />
         <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/drawable/ic_shop.xml" value="0.2375" />
-        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/activity_main.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/bottom_nav_bar.xml" value="0.4068582020389249" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/char_row.xml" value="0.3625" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/message.xml" value="0.33" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/message_recieve.xml" value="0.5" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/message_sent.xml" value="0.5" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/prova_gui.xml" value="0.24375" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/social_chat_row.xml" value="0.22" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/social_chat_view.xml" value="0.22" />
+        <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/layout/social_view.xml" value="0.24375" />
         <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2375" />
         <entry key="..\:/Users/mmaff/AndroidStudioProjects/AndroidStudio/MyCloset/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18177083333333333" />
