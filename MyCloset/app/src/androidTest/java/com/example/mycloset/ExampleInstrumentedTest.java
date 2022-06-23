@@ -1,4 +1,4 @@
-package com.unitn.mycloset;
+package com.example.mycloset;
 
 import android.content.Context;
 

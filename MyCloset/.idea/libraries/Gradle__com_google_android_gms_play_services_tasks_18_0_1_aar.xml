@@ -3,9 +3,8 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2bade915da25eb0e1e89e03a727023fe/transformed/play-services-tasks-18.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/82da34aee3a87b5abb5166e6d598fe6c/transformed/play-services-tasks-18.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7aa1b5a4c1d9ae71d6e0e5bbf9957505/transformed/play-services-tasks-18.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7aa1b5a4c1d9ae71d6e0e5bbf9957505/transformed/play-services-tasks-18.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7aa1b5a4c1d9ae71d6e0e5bbf9957505/transformed/play-services-tasks-18.0.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/82da34aee3a87b5abb5166e6d598fe6c/transformed/play-services-tasks-18.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/82da34aee3a87b5abb5166e6d598fe6c/transformed/play-services-tasks-18.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-tasks/18.0.1/2e3c5d886f131c9c8ae2d93dcf32aa58dad438e3/play-services-tasks-18.0.1-javadoc.jar!/" />

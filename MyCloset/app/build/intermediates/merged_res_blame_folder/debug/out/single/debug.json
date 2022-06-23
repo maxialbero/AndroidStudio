@@ -1,134 +1,138 @@
 [
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_social.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_social.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_bg_sent_message.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/bg_sent_message.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_bottom_nav_bar.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/bottom_nav_bar.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_home.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_home.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_bg_button.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/bg_button.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_bg_button.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/bg_button.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_message_sent.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/message_sent.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_bg_sent_message.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/bg_sent_message.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_baseline_add_24.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_bg_recieve_message.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/bg_recieve_message.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_bg_input.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/bg_input.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_message_sent.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/message_sent.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_social.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_social.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_social_view.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/social_view.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_wardrobe.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_wardrobe.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_coat_hanger.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_coat_hanger.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_bottom_nav_bar.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/bottom_nav_bar.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_social_chat_view.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/social_chat_view.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_bg_input.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/bg_input.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/xml_backup_rules.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_social_view.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/social_view.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_home.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_home.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_shop.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_shop.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_social_chat_view.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/social_chat_view.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_activity_main.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/activity_main.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_message_recieve.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/message_recieve.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/xml/data_extraction_rules.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_coat_hanger.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_coat_hanger.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_message_recieve.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/message_recieve.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_launcher_background.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_ic_wardrobe.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/ic_wardrobe.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_shop.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_shop.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/drawable_ic_baseline_add_24.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/drawable/ic_baseline_add_24.xml"
+        "merged": "com.example.mycloset.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "com.example.mycloset.app-main-30:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/layout_social_chat_row.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/layout/social_chat_row.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/xml_backup_rules.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/xml/backup_rules.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/layout_social_chat_row.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/layout/social_chat_row.xml"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mycloset.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.mycloset.app-main-32:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-merged_res-28:/drawable_bg_recieve_message.xml.flat",
+        "source": "/home/ubuntu/.gradle/daemon/7.3.3/com.example.mycloset.app-main-30:/drawable/bg_recieve_message.xml"
     }
 ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-28:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-26:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/ubuntu/.gradle/caches/transforms-3/9e103f64ffeae6ceed38dee763bdcc5e/transformed/material-1.6.1/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "/home/ubuntu/.gradle/caches/transforms-3/eeca00bbc6db621a6099e13536e42a3b/transformed/material-1.6.1/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
