@@ -1,3 +1,15 @@
+buildscript {
+    repositories {
+        // Check that you have Google's Maven repository (if not, add it).
+        google()
+        jcenter()
+    }
+    dependencies {
+        // Add the App Distribution Gradle plugin
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:3.0.2'
+    }
+}
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id 'com.android.application' version '7.2.1' apply false

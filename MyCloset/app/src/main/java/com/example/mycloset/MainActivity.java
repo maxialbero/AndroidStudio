@@ -9,20 +9,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.social_view);
-    }
-}
+        //setContentView(R.layout.social_view);
 
-/*        recyclerView = findViewById(R.id.recView);
+        /*recyclerView = findViewById(R.id.recView);
 
         DB db = new DB("", "", "");
 
         ArrayList<Item> list = db.SELECT("");
-        ChatAdapter chatAdapter = new ChatAdapter(this, list);*/
+        ChatAdapter chatAdapter = new ChatAdapter(this, list);
 
-/*      Button button = (Button) findViewById(R.id.Social);
+        Button button = (Button) findViewById(R.id.Social);
         button.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v) {
-            // Do something in response to button click
-        }
-   });*/
+            public void onClick(View v) {
+                // Do something in response to button click
+            }
+        });*/
+    }
+}
