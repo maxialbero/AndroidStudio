@@ -2,11 +2,12 @@ buildscript {
     repositories {
         // Check that you have Google's Maven repository (if not, add it).
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         // Add the App Distribution Gradle plugin
         classpath 'com.google.firebase:firebase-appdistribution-gradle:3.0.2'
+        classpath 'com.google.gms:google-services:4.3.10'  // Google Services plugin
     }
 }
 

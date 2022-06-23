@@ -36,7 +36,7 @@ public class DB {
     }
 
     public Map<String, Object> SELECT(String table, ArrayList<String> params) {
-        Map<String, Object> res = new HashMap<String, Object>();
+        final Map<String, Object>[] res = new Map[]{new HashMap<String, Object>()};
 
         // should be a prepared statement to avoid SQL injections
         // fill the ArrayList with the query result
@@ -47,12 +47,11 @@ public class DB {
                     if (params != null) {
                         for (String p : params) {
                             Object item = documentSnapshot.getString(p);
-                            //res.put(p, item);
+                            res[0].put(p, item);
                         }
                     } else {
-                        //res = documentSnapshot.getData();
+                        res[0] = documentSnapshot.getData();
                     }
-                    //res.put("", "");
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -62,7 +61,7 @@ public class DB {
             }
         });
 
-        return res;
+        return res[0];
     }
 
     public void INSERT(String table, HashMap<String, Object> json) {

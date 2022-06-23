@@ -21,6 +21,7 @@ drawable ic_social
 drawable ic_wardrobe
 id bottonAdd
 id button
+id button2
 id chat1
 id editText
 id groupTxt
@@ -30,6 +31,7 @@ id message_toolbar
 id nav_bar
 id recView
 id recyclerView
+id testText
 id textArmadio
 id textHome
 id textShop
@@ -49,10 +51,17 @@ string armadio
 string btn
 string button_send_text
 string clickToAddContent
+string default_web_client_id
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string group_name
 string home
 string last_message
 string message_hint
+string project_id
 string shop
 string social
 string standard_message

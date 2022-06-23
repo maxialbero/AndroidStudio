@@ -1,4 +1,4 @@
-package com.example.mycloset;
+package com.unitn.mycloset;
 
 import org.junit.Test;
 
