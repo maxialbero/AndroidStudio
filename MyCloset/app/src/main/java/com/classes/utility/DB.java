@@ -47,18 +47,18 @@ public class DB {
                     if (params != null) {
                         for (String p : params) {
                             Object item = documentSnapshot.getString(p);
-                            res.put(p, item);
+                            //res.put(p, item);
                         }
                     } else {
-                        res = documentSnapshot.getData();
+                        //res = documentSnapshot.getData();
                     }
-                    res.put("", "");
+                    //res.put("", "");
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                // do nothing(?)
+                // alert error
             }
         });
 
@@ -80,7 +80,7 @@ public class DB {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                // newgative alert
+                // negative alert
             }
         });
     }
