@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.mycloset",
+  "applicationId": "com.unitn.mycloset",
   "variantName": "debug",
   "elements": [
     {
