@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-26:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-28:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/ubuntu/.gradle/caches/transforms-3/eeca00bbc6db621a6099e13536e42a3b/transformed/material-1.6.1/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+                    "source": "/home/ubuntu/.gradle/caches/transforms-3/f1d267fcf42426c034c2a2ec0ec35267/transformed/material-1.6.1/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
