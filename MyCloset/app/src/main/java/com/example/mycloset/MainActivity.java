@@ -4,14 +4,20 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.classes.objects.Listeners;
 import com.classes.utility.DB;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     DB db;
@@ -25,6 +31,31 @@ public class MainActivity extends AppCompatActivity {
         db = new DB("", "", "");
 
         db.connect();
+
+        Listeners l = new Listeners() {
+            @Override
+            public void onStart() {
+
+            }
+
+            @Override
+            public void onSuccess(DataSnapshot data) {
+
+            }
+
+            @Override
+            public void onFailed(DatabaseError databaseError) {
+
+            }
+        };
+        db.SELECT("Utente", null, l);
+
+        //Log.d("DEBUG", users.toString());
+        /*for(String key : users.keySet()) {
+            TextView tw = new TextView(this);
+            tw.setText(key);
+            cl.addView(tw);
+        }*/
 
         /*recyclerView = findViewById(R.id.recView);
 

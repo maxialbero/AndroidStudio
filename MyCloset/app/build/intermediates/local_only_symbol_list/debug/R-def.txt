@@ -28,6 +28,7 @@ id editUsername
 id groupTxt
 id imageView
 id lastMsgTxt
+id layout
 id message_toolbar
 id nav_bar
 id recView
