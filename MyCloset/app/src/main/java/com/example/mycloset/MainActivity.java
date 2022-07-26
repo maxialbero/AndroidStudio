@@ -42,22 +42,41 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(DataSnapshot data) {
-                ArrayList<Object> objs = new ArrayList<>();
+                /*
+                da sistemare coi filtri
+                Log.e("DEBUG " ,"Count: " + data.getChildrenCount());
+
+                if(data.getChildrenCount() > 1) {
+                    for(DataSnapshot snapshot : data.getChildren()) {
+                        // crea un'istanza dell'oggetto, anche se ha campi a null
+                        Utente utente = snapshot.getValue(Utente.class);
+                        // forse conviene controllare se l'oggetto è null, prima di usarlo
+                        if(utente != null) {
+                            Log.d("DEBUG", utente.toString());
+                        } else {
+                            // error
+                        }
+                    }
+                } else {
+                    Utente utente = data.getValue(Utente.class);
+                    if(utente != null) {
+                        Log.d("DEBUG", utente.toString());
+                    } else {
+                        // errro
+                    }
+                }
+                */
                 // Al callback dell'evento viene passato uno snapshot contenente tutti i dati in
                 // quella posizione, inclusi i dati figlio. Se non ci sono dati, lo snapshot
                 // restituirà false quando chiami exists() e null quando chiami getValue() su di esso.
                 if(data.getValue() instanceof ArrayList) {
                     ArrayList<HashMap<Object, Object>> list = new ArrayList<>();
-                    //list = (ArrayList) Class.forName("com.classes.objects." + tableName).newInstance();
                     list = (ArrayList<HashMap<Object, Object>>) data.getValue();
 
                     for(HashMap item : list) {
                         if(item != null) {
-                            // aggiungo l'oggetto alla lista di quelli da passare
-                            //objs.add();
                             for(Object key : item.keySet()) {
                                 Log.d("DEBUG", list.indexOf(item) + " - " + key + ": " + item.get(key));
-
                             }
                         }
                     }

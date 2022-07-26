@@ -41,7 +41,7 @@ public class DB {
     public void SELECT(String tableName, HashMap<String, String> filters, final Listeners l) {
         l.onStart();
 
-        String id = "";
+        String id = "1";
         DatabaseReference table = db.getReference(tableName).child(id);
 
         table.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -56,8 +56,8 @@ public class DB {
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
-                l.onFailed(error);
                 Log.w("DEBUG", "Failed to read value.", error.toException());
+                l.onFailed(error);
             }
         });
 
