@@ -33,55 +33,33 @@ public class DB {
     public void connect() {
         // Create connection
         db = FirebaseDatabase.getInstance("https://mycloset-5fce8-default-rtdb.europe-west1.firebasedatabase.app");
+        db.setPersistenceEnabled(true);
+        // vedere https://firebase.google.com/docs/database/android/offline-capabilities?authuser=0
+        // per più dettagli sulla persistenza
     }
 
-    public Map<String, Object> SELECT(String tableName, HashMap<String, String> filters, final Listeners l) {
-        Map<String, Object> res = new HashMap<String, Object>();
-
-        l.onStart();    // manage the async reading
+    public void SELECT(String tableName, HashMap<String, String> filters, final Listeners l) {
+        l.onStart();
 
         String id = "";
         DatabaseReference table = db.getReference(tableName).child(id);
 
-        table.addValueEventListener(new ValueEventListener() {
+        table.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
 
-                // Al callback dell'evento viene passato uno snapshot contenente tutti i dati in
-                // quella posizione, inclusi i dati figlio. Se non ci sono dati, lo snapshot
-                // restituirà false quando chiami exists() e null quando chiami getValue() su di esso.
-                if(dataSnapshot.getValue() instanceof ArrayList) {
-                    ArrayList<HashMap<Object, Object>> list = (ArrayList<HashMap<Object, Object>>) dataSnapshot.getValue();
-
-                    for(HashMap<Object, Object> item : list) {
-                        if(item != null) {
-                            for(Object key : item.keySet()) {
-                                Log.d("DEBUG", list.indexOf(item) + " - " + key + ": " + item.get(key));
-                            }
-                        }
-                    }
-                } else {
-                    HashMap<Object, Object> item = (HashMap<Object, Object>) dataSnapshot.getValue();
-                    if(item != null) {
-                        for(Object key : item.keySet()) {
-                            Log.d("DEBUG", key + ": " + item.get(key));
-                        }
-                    } else {
-                        // alert item not found
-                    }
-                }
+                l.onSuccess(dataSnapshot);
             }
 
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
+                l.onFailed(error);
                 Log.w("DEBUG", "Failed to read value.", error.toException());
             }
         });
-
-        return res;
 
         /*final Map<String, Object> res = new HashMap<String, Object>();
 
@@ -115,12 +93,10 @@ public class DB {
         return res;*/
     }
 
-    public void INSERT(String tableName, HashMap<String, Object> json) {
-        String id = "3";
+    public void INSERT(String tableName, Object json) {
         DatabaseReference table = db.getReference(tableName);
-        //Utente u = new Utente("Lorenzo", "Rossi", "Lollo", "password", "lollo@gmail.com");
 
-        // table.push();
+        String id = table.push().getKey();
         table.child(id).setValue(json).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
@@ -132,26 +108,13 @@ public class DB {
                 // negative alert
             }
         });
-        /*if(json != null) {
-            CollectionReference doc = db.collection(table);
-            doc.add(json).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                @Override
-                public void onSuccess(DocumentReference documentReference) {
-                    Log.d("DEBUG", "INSERT correctly executed on table " + table + " for the ID " + documentReference.getId());
-                    Log.d("DEBUG", "Success");
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Log.d("DEBUG", "Failure");
-                }
-            });
-        }*/
     }
 
-    public void DELETE(int id) {
+    public void DELETE(String tableName, String id) {
         // maybe also table name and other parameters are needed
         // delete the item by id
+        DatabaseReference item = db.getReference(tableName).child(id);
+        item.removeValue();
     }
 
     public void MODIFY(String id, String tableName, HashMap<String, Object> json) {

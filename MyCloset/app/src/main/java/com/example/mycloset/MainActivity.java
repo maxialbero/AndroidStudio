@@ -12,10 +12,12 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.classes.objects.Listeners;
+import com.classes.objects.Utente;
 import com.classes.utility.DB;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,7 +42,35 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(DataSnapshot data) {
+                ArrayList<Object> objs = new ArrayList<>();
+                // Al callback dell'evento viene passato uno snapshot contenente tutti i dati in
+                // quella posizione, inclusi i dati figlio. Se non ci sono dati, lo snapshot
+                // restituirà false quando chiami exists() e null quando chiami getValue() su di esso.
+                if(data.getValue() instanceof ArrayList) {
+                    ArrayList<HashMap<Object, Object>> list = new ArrayList<>();
+                    //list = (ArrayList) Class.forName("com.classes.objects." + tableName).newInstance();
+                    list = (ArrayList<HashMap<Object, Object>>) data.getValue();
 
+                    for(HashMap item : list) {
+                        if(item != null) {
+                            // aggiungo l'oggetto alla lista di quelli da passare
+                            //objs.add();
+                            for(Object key : item.keySet()) {
+                                Log.d("DEBUG", list.indexOf(item) + " - " + key + ": " + item.get(key));
+
+                            }
+                        }
+                    }
+                } else {
+                    HashMap<Object, Object> item = (HashMap<Object, Object>) data.getValue();
+                    if(item != null) {
+                        for(Object key : item.keySet()) {
+                            Log.d("DEBUG", key + ": " + item.get(key));
+                        }
+                    } else {
+                        // alert item not found
+                    }
+                }
             }
 
             @Override
@@ -76,15 +106,16 @@ public class MainActivity extends AppCompatActivity {
         EditText t = (EditText) findViewById(R.id.editUsername);
         String text = t.getText().toString();
 
-        HashMap<String, Object> json = new HashMap<>();
-
-        json.put("Nome", text);
-
         String debug;
         if(!text.isEmpty()) {
-            db.INSERT("Utente", json);
+            Utente utente = new Utente();
+            utente.setNome(text);
+
+            db.INSERT("Utente", utente);
+            // positive alert
             debug = "Inserito";
         } else {
+            // negative alert
             debug = "Non inserito";
         }
         Log.d("DEBUG", debug);

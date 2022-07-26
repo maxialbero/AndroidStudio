@@ -3,6 +3,10 @@ package com.classes.objects;
 public class Utente {
     String nome, cognome, username, password, email;
 
+    public Utente() {
+
+    }
+
     public Utente(String nome, String cognome, String username, String password, String email) {
         this.nome = nome;
         this.cognome = cognome;
