@@ -41,15 +41,14 @@ public class DB {
     public void SELECT(String tableName, HashMap<String, String> filters, final Listeners l) {
         l.onStart();
 
-        String id = "1";
-        DatabaseReference table = db.getReference(tableName).child(id);
+        String id = "";
+        DatabaseReference table = db.getReference(tableName);
 
-        table.addListenerForSingleValueEvent(new ValueEventListener() {
+        table.orderByKey().equalTo(id).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-
                 l.onSuccess(dataSnapshot);
             }
 
