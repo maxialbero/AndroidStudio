@@ -1,25 +1,22 @@
 package com.example.mycloset;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.classes.objects.Listeners;
 import com.classes.objects.Utente;
 import com.classes.utility.DB;
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     DB db;
@@ -41,22 +38,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onSuccess(DataSnapshot data) {
-                // Al callback dell'evento viene passato uno snapshot contenente tutti i dati in
-                // quella posizione, inclusi i dati figlio. Se non ci sono dati, lo snapshot
-                // restituirà false quando chiami exists() e null quando chiami getValue() su di esso.
+            public void onSuccess(ArrayList<Object> list, Context context) {
+                ConstraintLayout cl = findViewById(R.id.layout);
+                int y = 500;
 
-                //da sistemare coi filtri
+                for(Object o : list) {
+                    // castare l'oggetto
+                    Utente utente = (Utente) o;
+                    // usare l'oggetto
+                    Log.d("DEBUG", "I received " + utente.toString());
 
-                Utente utente;
-                try {
-                    for(DataSnapshot ds : data.getChildren()) {
-                        utente = ds.getValue(Utente.class);
-                        Log.d("DEBUG", "Array: " + utente.toString());
-                    }
-                } catch(Exception e) {
-                    utente = data.getValue(Utente.class);
-                    Log.d("DEBUG", "Single: " + utente.toString());
+                    TextView tw = new TextView(context);
+                    tw.setText(utente.getNome());
+                    tw.setX(20);
+                    tw.setY(y);
+                    y += 100;
+                    cl.addView(tw);
                 }
             }
 
@@ -65,7 +62,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-        db.SELECT("Utente", null, l);
+
+        HashMap<String, String> filters = new HashMap<>();
+
+        //filters.put("id", "2");
+        filters.put("nome", "o");
+        //filters.put("cognome", "i");
+
+        db.SELECT("Utente", filters, l, this);
 
         //Log.d("DEBUG", users.toString());
         /*for(String key : users.keySet()) {
@@ -89,8 +93,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void save(View view) {
-        TextView username = (TextView) findViewById(R.id.txtUsername);
-        EditText t = (EditText) findViewById(R.id.editUsername);
+        EditText t = (EditText) findViewById(R.id.editEmail);
         String text = t.getText().toString();
 
         String debug;

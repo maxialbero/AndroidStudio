@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
 MERGED from [com.google.firebase:firebase-analytics:21.1.0] /home/ubuntu/.gradle/caches/transforms-3/54a31ec00d230804e1f6368b3d48db5b/transformed/firebase-analytics-21.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /home/ubuntu/.gradle/caches/transforms-3/1b41865f7f2115babb2bdbe87f69d418/transformed/firebase-auth-21.0.6/AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-firestore:24.2.1] /home/ubuntu/.gradle/caches/transforms-3/3a43c6baf7b9c8741356c9b5eb4f3f25/transformed/firebase-firestore-24.2.1/AndroidManifest.xml:2:1-26:12
@@ -71,27 +71,27 @@ MERGED from [androidx.print:print:1.0.0] /home/ubuntu/.gradle/caches/transforms-
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/ubuntu/.gradle/caches/transforms-3/c5b76b55679f45421cbfd7592dd2e2b0/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/ubuntu/.gradle/caches/transforms-3/ba732a753a1de6087875c5b224629801/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] /home/ubuntu/.gradle/caches/transforms-3/8f6e400286e0a5e366a586f4f69aa69a/transformed/grpc-android-1.44.1/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:4:5-35
 		INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml
-		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
+		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
 		INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml
-		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-27:12
+		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:1-36:12
 		INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:6:5-25:19
+ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:6:5-34:19
 MERGED from [com.google.firebase:firebase-analytics:21.1.0] /home/ubuntu/.gradle/caches/transforms-3/54a31ec00d230804e1f6368b3d48db5b/transformed/firebase-analytics-21.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.1.0] /home/ubuntu/.gradle/caches/transforms-3/54a31ec00d230804e1f6368b3d48db5b/transformed/firebase-analytics-21.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /home/ubuntu/.gradle/caches/transforms-3/1b41865f7f2115babb2bdbe87f69d418/transformed/firebase-auth-21.0.6/AndroidManifest.xml:26:5-71:19
@@ -182,6 +182,12 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.example.mycloset.SigninActivity
+ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:25:9-33:20
+	android:exported
+		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml:26:13-43
 uses-sdk
 INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ubuntu/Scrivania/Android/MyCloset/app/src/main/AndroidManifest.xml

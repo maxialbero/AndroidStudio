@@ -7,25 +7,38 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">MyCloset</string>
     <string name="armadio">Armadio</string>
     <string name="btn">Btn</string>
     <string name="button_send_text">Send</string>
     <string name="clickToAddContent">clickToAddContent</string>
+    <string name="cognome">Cognome</string>
     <string name="default_web_client_id" translatable="false">44424936018-jgooasakoc120rteotcuvu8psbihp0ki.apps.googleusercontent.com</string>
+    <string name="e_mail">E-mail</string>
+    <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">44424936018</string>
     <string name="google_api_key" translatable="false">AIzaSyBY0LTFFhz-73BlMKv35aNlpmGhaKsRhzE</string>
     <string name="google_app_id" translatable="false">1:44424936018:android:051e1976041bdf22547d8b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBY0LTFFhz-73BlMKv35aNlpmGhaKsRhzE</string>
     <string name="google_storage_bucket" translatable="false">mycloset-5fce8.appspot.com</string>
     <string name="group_name">Group name</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="home">Home</string>
     <string name="last_message">Last message</string>
     <string name="message_hint">Type your message</string>
+    <string name="next">Next</string>
+    <string name="nome">Nome</string>
+    <string name="password">Password</string>
+    <string name="previous">Previous</string>
     <string name="project_id" translatable="false">mycloset-5fce8</string>
+    <string name="second_fragment_label">Second Fragment</string>
     <string name="shop">Shop</string>
+    <string name="sign_in">Sign In</string>
     <string name="social">Social</string>
     <string name="standard_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien risus, gravida quis nunc at, pellentesque mattis lacus. Morbi eget erat vitae enim viverra venenatis vitae eu quam.</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
     <string name="todo">TODO</string>
     <string name="username">Username</string>
     <style name="Theme.MyCloset" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -41,4 +54,10 @@
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
     </style>
+    <style name="Theme.MyCloset.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.MyCloset.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MyCloset.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

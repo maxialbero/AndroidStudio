@@ -1,13 +1,13 @@
 package com.classes.objects;
 
 public class Utente {
-    String nome, cognome, username, password, email;
+    public String nome, cognome, username, email, password;
 
     public Utente() {
 
     }
 
-    public Utente(String nome, String cognome, String username, String password, String email) {
+    public Utente(String nome, String cognome, String username, String email, String password) {
         this.nome = nome;
         this.cognome = cognome;
         this.username = username;

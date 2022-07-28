@@ -1,5 +1,7 @@
 package com.classes.utility;
 
+import android.content.Context;
+import android.provider.ContactsContract;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -14,7 +16,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,58 +43,96 @@ public class DB {
         // per più dettagli sulla persistenza
     }
 
-    public void SELECT(String tableName, HashMap<String, String> filters, final Listeners l) {
+    public void SELECT(String tableName, HashMap<String, String> filters, final Listeners l, Context context) {
         l.onStart();
 
-        String id = "";
         DatabaseReference table = db.getReference(tableName);
 
-        table.orderByKey().equalTo(id).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                l.onSuccess(dataSnapshot);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.w("DEBUG", "Failed to read value.", error.toException());
-                l.onFailed(error);
-            }
-        });
-
-        /*final Map<String, Object> res = new HashMap<String, Object>();
-
-        // should be a prepared statement to avoid SQL injections
-        // fill the ArrayList with the query result
-        if(filters != null && !filters.isEmpty()) {
-            Log.d("DEBUG", filters.toString());
-        } else {
-            db.collection(table).get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+        if(filters.containsKey("id")) {
+            table.orderByKey().equalTo(filters.get("id")).addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
-                public void onSuccess(QuerySnapshot querySnapshot) {
-                    for (QueryDocumentSnapshot doc : querySnapshot) {
-                        Map<String, Object> tmp = doc.getData();
-                        for (String key : tmp.keySet()) {
-                            res.put(key, tmp.get(key));
-                            Log.d("DEBUG", res.toString());
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if(snapshot.exists()) {
+                        ArrayList<Object> list = new ArrayList<>();
+
+                        try {
+                            for(DataSnapshot ds : snapshot.getChildren()) {
+                                list.add(ds.getValue(Class.forName("com.classes.objects." + tableName)));
+                            }
+                        } catch(Exception e) {
+                            Log.e("ERROR", "Class not found", e);
                         }
+
+                        l.onSuccess(list, context);
+                    } else {
+                        // negative alert
                     }
                 }
-            }).addOnFailureListener(new OnFailureListener() {
+
                 @Override
-                public void onFailure(@NonNull Exception e) {
-                    Log.d("DEBUG", "Document not found");
-                    // alert error
+                public void onCancelled(@NonNull DatabaseError error) {
+                    // negative alert
+                }
+            });
+        } else {
+            table.orderByKey().addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    // This method is called once with the initial value and again
+                    // whenever data at this location is updated.
+
+                    if (dataSnapshot.exists()) {
+                        ArrayList<Object> list = new ArrayList<>();
+
+                        for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                            Object obj = null;
+
+                            try {
+                                obj = ds.getValue(Class.forName("com.classes.objects." + tableName));
+                            } catch (Exception e) {
+                                Log.e("ERROR", "Class not found");
+                            }
+
+                            Boolean insert = true;
+
+                            if (filters != null) {
+                                for (String key : filters.keySet()) {
+                                    try {
+                                        Class<?> c = obj.getClass();
+                                        Field field = c.getField(key);
+                                        Object fieldValue = field.get(obj).getClass().cast(field.get(obj));
+                                        String fieldString = fieldValue.toString();
+
+                                        if (!fieldString.contains(filters.get(key))) {
+                                            insert = false;
+                                        }
+                                    } catch (Exception e) {
+                                        insert = false;
+                                        Log.e("ERROR", "Null value has been read");
+                                    }
+                                }
+                            }
+
+                            if (insert) {
+                                list.add(obj);
+                            }
+                            Log.d("DEBUG", "Sending " + list.toString());
+                        }
+
+                        l.onSuccess(list, context);
+                    } else {
+                        // negative alert
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError error) {
+                    // Failed to read value
+                    Log.w("DEBUG", "Failed to read value.", error.toException());
+                    l.onFailed(error);
                 }
             });
         }
-
-        Log.d("DEBUG", res.toString());
-
-        return res;*/
     }
 
     public void INSERT(String tableName, Object json) {
