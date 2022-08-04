@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-28:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-29:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/home/ubuntu/.gradle/caches/transforms-3/fa103a49a4b1931502a06c75ef18fbd3/transformed/appcompat-1.4.2/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "/home/ubuntu/.gradle/caches/transforms-3/a4fc0db1e3a5f343b38214a5737acffb/transformed/appcompat-1.4.2/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

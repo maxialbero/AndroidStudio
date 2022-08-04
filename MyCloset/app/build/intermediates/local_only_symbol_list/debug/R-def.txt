@@ -20,6 +20,7 @@ drawable ic_launcher_foreground
 drawable ic_shop
 drawable ic_social
 drawable ic_wardrobe
+id accountName
 id bottonAdd
 id btnSend
 id button
@@ -30,10 +31,12 @@ id editNome
 id editPassword
 id editText
 id editUsername
+id googleSignIn
 id groupTxt
 id imageView
 id lastMsgTxt
 id layout
+id logout
 id message_toolbar
 id nav_bar
 id recView
@@ -63,6 +66,7 @@ string clickToAddContent
 string cognome
 string default_web_client_id
 string e_mail
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
@@ -74,6 +78,7 @@ string hello_first_fragment
 string hello_second_fragment
 string home
 string last_message
+string logout
 string message_hint
 string next
 string nome

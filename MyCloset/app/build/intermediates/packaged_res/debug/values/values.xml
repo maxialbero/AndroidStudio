@@ -16,6 +16,7 @@
     <string name="cognome">Cognome</string>
     <string name="default_web_client_id" translatable="false">44424936018-jgooasakoc120rteotcuvu8psbihp0ki.apps.googleusercontent.com</string>
     <string name="e_mail">E-mail</string>
+    <string name="firebase_database_url" translatable="false">https://mycloset-5fce8-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">44424936018</string>
     <string name="google_api_key" translatable="false">AIzaSyBY0LTFFhz-73BlMKv35aNlpmGhaKsRhzE</string>
@@ -27,6 +28,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="home">Home</string>
     <string name="last_message">Last message</string>
+    <string name="logout">LogOut</string>
     <string name="message_hint">Type your message</string>
     <string name="next">Next</string>
     <string name="nome">Nome</string>

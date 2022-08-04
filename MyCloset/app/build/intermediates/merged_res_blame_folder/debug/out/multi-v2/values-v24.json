@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-28:/values-v24/values-v24.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-29:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/ubuntu/.gradle/caches/transforms-3/fa103a49a4b1931502a06c75ef18fbd3/transformed/appcompat-1.4.2/res/values-v24/values-v24.xml",
+                    "source": "/home/ubuntu/.gradle/caches/transforms-3/a4fc0db1e3a5f343b38214a5737acffb/transformed/appcompat-1.4.2/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/ubuntu/.gradle/caches/transforms-3/f1d267fcf42426c034c2a2ec0ec35267/transformed/material-1.6.1/res/values-v24/values-v24.xml",
+                    "source": "/home/ubuntu/.gradle/caches/transforms-3/bd8599356f72a433255d147fb92cd270/transformed/material-1.6.1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

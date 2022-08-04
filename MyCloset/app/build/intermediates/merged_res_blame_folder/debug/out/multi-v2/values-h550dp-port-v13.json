@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-28:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-29:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/home/ubuntu/.gradle/caches/transforms-3/f1d267fcf42426c034c2a2ec0ec35267/transformed/material-1.6.1/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "/home/ubuntu/.gradle/caches/transforms-3/bd8599356f72a433255d147fb92cd270/transformed/material-1.6.1/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

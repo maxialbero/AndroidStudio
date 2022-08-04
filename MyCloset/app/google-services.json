@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "44424936018-f3pku60031dpkjr8gandafvpou6cmarq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unitn.mycloset",
+            "certificate_hash": "e253e56f602d3b8e135a09451a691dea152d536e"
+          }
+        },
+        {
           "client_id": "44424936018-jgooasakoc120rteotcuvu8psbihp0ki.apps.googleusercontent.com",
           "client_type": 3
         }

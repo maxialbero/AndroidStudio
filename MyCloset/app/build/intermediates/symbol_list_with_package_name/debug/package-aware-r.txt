@@ -2616,6 +2616,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountName
 id actionDown
 id actionDownUp
 id actionUp
@@ -2793,6 +2794,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id googleSignIn
 id graph
 id graph_wrap
 id groupTxt
@@ -2839,6 +2841,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logout
 id masked
 id match_constraint
 id match_parent
@@ -3360,6 +3363,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
@@ -3375,6 +3379,7 @@ string icon_content_description
 string item_view_role_description
 string label
 string last_message
+string logout
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
 string m3_ref_typeface_plain_medium
